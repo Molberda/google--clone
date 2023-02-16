@@ -13,7 +13,7 @@ const Home = () => {
             <div className="home__headerLeft">
               <Link className="link" to="/about">About</Link>
               <Link className="link" to="/store">Store</Link>
-              <Link className="link" to="/">Home</Link>
+              <Link className="link" to="/search">Search</Link>
             </div>
             <div className="home__headerRight">
               <Link className="link" to="/gmail">Gmail</Link>

@@ -28,12 +28,3 @@ h1{
   height: 100%;
 }
 
-.home__header{
-  display: flex;
-  justify-content: space-between;
-}
-
-.link{
-  border: 1px solid black;
-  padding: 0.25em 0.5em;
-}

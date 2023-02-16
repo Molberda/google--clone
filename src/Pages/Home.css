@@ -1,4 +1,18 @@
+.home__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home__header .link{
+        margin-right: 1.2em;
+        color: rgba(0, 0, 0, 0.87);
+  }
+
+  .home__header .link:hover{
+        text-decoration: underline;
+  }
+
 .home__headerLeft, .home__headerRight{
     display: flex;
-    gap: 0.5em;
 }
