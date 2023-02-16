@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.home__header .link {
+.home__header  .link {
   margin-right: 1.2em;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -25,7 +25,8 @@
 }
 
 .home__headerRight > .MuiSvgIcon-root {
-      margin-right: 1.2em;
+      font-size: 1.5em;
+      margin-right: 0.8em;
       color: rgba(0, 0, 0, 0.87);
 }
 
@@ -33,10 +34,17 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin-top: 10%;
 }
 
 .home__body > img{
       object-fit: contain;
       height: 8em
+}
+
+.search__input{
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
 }

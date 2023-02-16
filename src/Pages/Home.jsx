@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import AppsIcon from "@mui/icons-material/Apps";
 import { Avatar } from "@mui/material";
+import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
               className="home__logo"
             />
             <div className="home__input--container">
-              {/* Search bar component*/}
+              <SearchBar/>
             </div>
           </div>
         </div>
