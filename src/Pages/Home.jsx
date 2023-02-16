@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Home.css'
+import AppsIcon from '@mui/icons-material/Apps'
+import { Avatar } from "@mui/material";
 
 const Home = () => {
   return (
@@ -18,8 +20,8 @@ const Home = () => {
             <div className="home__headerRight">
               <Link className="link" to="/gmail">Gmail</Link>
               <Link className="link" to="/Images">Images</Link>
-              {/* Icon */}
-              {/* Avatar */}
+              <AppsIcon />
+              <Avatar/>
             </div>
           </div>
 
