@@ -32,13 +32,15 @@ const Home = () => {
               <Avatar />
             </div>
           </div>
-
           <div className="home__body">
             <img
               src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
               alt=""
               className="home__logo"
             />
+            <div className="home__input--container">
+              {/* Search bar component*/}
+            </div>
           </div>
         </div>
       </div>
