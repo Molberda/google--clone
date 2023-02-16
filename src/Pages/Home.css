@@ -1,0 +1,4 @@
+.home__headerLeft, .home__headerRight{
+    display: flex;
+    gap: 0.5em;
+}
