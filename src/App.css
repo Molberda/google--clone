@@ -18,7 +18,8 @@
 
 .row {
   margin: 0 auto;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1400px;
   height: 100%;
 }
 
