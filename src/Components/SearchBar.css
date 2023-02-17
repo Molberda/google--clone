@@ -61,3 +61,7 @@
   border: 1px solid #c6c6c6;
   color: #222;
 }
+
+.search__btns--hidden{
+  display: none !important;
+}

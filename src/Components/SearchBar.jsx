@@ -5,17 +5,16 @@ import MicIcon from "@mui/icons-material/Mic";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const SearchBar = () => {
+const SearchBar = ({ hideButtons = false }) => {
   const [input, setInput] = useState("");
 
-  const navigate = useNavigate
+  const history = useNavigate();
 
   function search(e) {
     e.preventDefault();
-    console.log(input)
+    console.log(input);
     // Do something with that input... come back and fix it
-
-    // 
+    history("/search");
   }
 
   return (
@@ -29,13 +28,28 @@ const SearchBar = () => {
         />
         <SearchIcon className="search__input--searchIcon" />
       </div>
-
-      <div className="search__btns">
-        <Button type="submit" onClick={search} variant="outlined">
-          Google Search
-        </Button>
-        <Button variant="outlined">I'm Feeling Lucky</Button>
-      </div>
+      {!hideButtons ? (
+        <div className="search__btns">
+          <Button type="submit" onClick={search} variant="outlined">
+            Google Search
+          </Button>
+          <Button variant="outlined">I'm Feeling Lucky</Button>
+        </div>
+      ) : (
+        <div className="search__btns">
+          <Button
+            className="search__btns--hidden"
+            type="submit"
+            onClick={search}
+            variant="outlined"
+          >
+            Google Search
+          </Button>
+          <Button className="search__btns--hidden" variant="outlined">
+            I'm Feeling Lucky
+          </Button>
+        </div>
+      )}
     </form>
   );
 };
