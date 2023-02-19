@@ -17,8 +17,6 @@ const SearchBar = ({ hideButtons = false }) => {
   function search(e) {
     e.preventDefault();
 
-    console.log(input);
-
     dispatch({
       type: actionTypes.SET_SEARCH_TERM,
       term: input,
