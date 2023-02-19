@@ -4,15 +4,26 @@ import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useStateValue } from "../StateProvider";
+import { actionTypes } from "../reducer";
+
 
 const SearchBar = ({ hideButtons = false }) => {
+  const [term , dispatch] = useStateValue();
+  
   const [input, setInput] = useState("");
-
   const history = useNavigate();
 
   function search(e) {
     e.preventDefault();
+
     console.log(input);
+
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    })
+
     // Do something with that input... come back and fix it
     history("/search");
   }
