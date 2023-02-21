@@ -10,6 +10,8 @@ const Search = () => {
     const [{ term }, dispatch] = useStateValue()
     const { data } = useGoogleSearch(term)
 
+    console.log(data)
+
     return (
         <div className='search'>
             <div className="search__header">
