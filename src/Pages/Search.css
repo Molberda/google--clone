@@ -28,6 +28,12 @@
   margin-top: 0.4em;
 }
 
-.search__header .search {
+.search__header > .search {
   margin-top: 0;
+}
+
+.search__header > .search > .search__input {
+  margin: unset;
+  max-width: unset;
+  width: unset;
 }
