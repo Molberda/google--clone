@@ -3,10 +3,12 @@ import './Search.css'
 import { Link } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
 import { useStateValue } from '../StateProvider';
+import useGoogleSearch from '../useGoogleSearch';
 
 
 const Search = () => {
     const [{ term }, dispatch] = useStateValue()
+    const { data } = useGoogleSearch(term)
 
     return (
         <div className='search'>
