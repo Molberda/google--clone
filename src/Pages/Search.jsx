@@ -16,21 +16,23 @@ const Search = () => {
 
   return (
     <div className="search__page">
-          <div className="search__header">
-            <Link className="search__home--link" to="/">
-              <figure className="search__logo--wrapper">
-                <img
-                  src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
-                  alt=""
-                  className="search__logo"
-                />
-              </figure>
-            </Link>
+      <div className="search__header">
+        <Link className="search__home--link" to="/">
+          <figure className="search__logo--wrapper">
+            <img
+              src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
+              alt=""
+              className="search__logo"
+            />
+          </figure>
+        </Link>
+        <div className="search__header--body">
           <SearchBar hideButtons />
-          </div>
+          
+        </div>
+      </div>
       <div className="container search__container">
         <div className="row search__row">
-
           <div className="search__results"></div>
         </div>
       </div>
