@@ -15,9 +15,7 @@ const Search = () => {
   console.log(data);
 
   return (
-    <div className="search">
-      <div className="container search__container">
-        <div className="row search__row">
+    <div className="search__page">
           <div className="search__header">
             <Link className="search__home--link" to="/">
               <figure className="search__logo--wrapper">
@@ -30,6 +28,8 @@ const Search = () => {
             </Link>
           <SearchBar hideButtons />
           </div>
+      <div className="container search__container">
+        <div className="row search__row">
 
           <div className="search__results"></div>
         </div>
