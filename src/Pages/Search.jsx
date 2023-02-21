@@ -28,7 +28,12 @@ const Search = () => {
         </Link>
         <div className="search__header--body">
           <SearchBar hideButtons />
-          
+          <div className="search__header--optn">
+            <div className="header__optn--left">
+              <div className="header__optn"></div>
+            </div>
+            <div className="header__optn--right"></div>
+          </div>
         </div>
       </div>
       <div className="container search__container">
