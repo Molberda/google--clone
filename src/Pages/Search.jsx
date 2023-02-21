@@ -18,14 +18,18 @@ const Search = () => {
     return (
         <div className='search'>
             <div className="search__header">
-                <h1>{term}</h1>
+            <Link to='/'>
+                <figure className="search__logo--wrapper">
+                    <img src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png" alt="" className="search__logo" />
+                </figure>
+            </Link>
+                
             </div>
 
             <div className="search__results">
 
 
             </div>
-            <Link to='/'>Home</Link>
             <SearchBar hideButtons/>                                                                                                                                                                                 
         </div>
     );
