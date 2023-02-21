@@ -19,7 +19,7 @@ const Search = () => {
       <div className="container search__container">
         <div className="row search__row">
           <div className="search__header">
-            <Link to="/">
+            <Link className="search__home--link" to="/">
               <figure className="search__logo--wrapper">
                 <img
                   src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
@@ -28,10 +28,10 @@ const Search = () => {
                 />
               </figure>
             </Link>
+          <SearchBar hideButtons />
           </div>
 
           <div className="search__results"></div>
-          <SearchBar hideButtons />
         </div>
       </div>
     </div>
