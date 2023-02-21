@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
 import { useStateValue } from '../StateProvider';
 import useGoogleSearch from '../useGoogleSearch';
+import response from '../response';
 
 
 const Search = () => {
     const [{ term }, dispatch] = useStateValue()
-    const { data } = useGoogleSearch(term)
+    // const { data } = useGoogleSearch(term)
+
+    const data = response
 
     console.log(data)
 
