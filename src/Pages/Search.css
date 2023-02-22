@@ -39,17 +39,30 @@
 }
 
 .search__header--optns{
+  display: flex;
   margin-top: 1.3em;
 }
 
-.header__optn--left{
+.header__optn--left, .header__optn--right{
   display: flex;
+}
 
+.header__optn--right{
+  margin-left: 4em;
 }
 
 .header__optn{
   display: flex;
   align-items: center;
   margin-right: 1em;
-  color: rgb(92, 92, 92);
+  color: gray;
+}
+
+.header__optn--right > .header__optn{
+  margin-right: 0em;
+  margin-left: 1em;
+}
+
+.header__optn .MuiSvgIcon-root{
+  margin-right: .3em;
 }

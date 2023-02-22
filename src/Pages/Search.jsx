@@ -5,12 +5,12 @@ import SearchBar from "../Components/SearchBar";
 import { useStateValue } from "../StateProvider";
 // import useGoogleSearch from "../useGoogleSearch";
 import response from "../response";
-import  SearchIcon  from "@mui/icons-material/Search";
-import  DescriptionIcon  from "@mui/icons-material/Description";
-import  ImageIcon  from "@mui/icons-material/Image";
-import  LocalOfferIcon  from "@mui/icons-material/LocalOffer";
-import  RoomIcon  from "@mui/icons-material/Room";
-import  MoreVertIcon  from "@mui/icons-material/MoreVert";
+import SearchIcon from "@mui/icons-material/Search";
+import DescriptionIcon from "@mui/icons-material/Description";
+import ImageIcon from "@mui/icons-material/Image";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import RoomIcon from "@mui/icons-material/Room";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Search = () => {
   const [{ term }, dispatch] = useStateValue();
@@ -36,32 +36,39 @@ const Search = () => {
           <SearchBar hideButtons />
           <div className="search__header--optns">
             <div className="header__optn--left">
-              <div className="header__optn">
+              <Link className="header__optn" to="/all">
                 <SearchIcon />
-                <Link to='/all'>All</Link>
-              </div>
-              <div className="header__optn">
+                All
+              </Link>
+              <Link className="header__optn" to="/news">
                 <DescriptionIcon />
-                <Link to='/news'>News</Link>
-              </div>
-              <div className="header__optn">
+                News
+              </Link>
+              <Link className="header__optn" to="/images">
                 <ImageIcon />
-                <Link to='/images'>Images</Link>
-              </div>
-              <div className="header__optn">
+                Images
+              </Link>
+              <Link className="header__optn" to="/shopping">
                 <LocalOfferIcon />
-                <Link to='/shopping'>Shopping</Link>
-              </div>
-              <div className="header__optn">
+                Shopping
+              </Link>
+              <Link className="header__optn" to="/maps">
                 <RoomIcon />
-                <Link to='/maps'>Maps</Link>
-              </div>
-              <div className="header__optn">
+                Maps
+              </Link>
+              <Link className="header__optn" to="/more">
                 <MoreVertIcon />
-                <Link to='/more'>More</Link>
-              </div>
+                More
+              </Link>
             </div>
-            <div className="header__optn--right"></div>
+            <div className="header__optn--right">
+              <Link className="header__optn" to="/settings">
+                Settings
+              </Link>
+              <Link className="header__optn" to="/tools">
+                Tools
+              </Link>
+            </div>
           </div>
         </div>
       </div>
