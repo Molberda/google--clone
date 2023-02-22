@@ -74,7 +74,11 @@ const Search = () => {
       </div>
       <div className="container search__container">
         <div className="row search__row">
-          <div className="search__results"></div>
+          {term && (
+            <div className="search__results">
+              <p className="search__results--count">About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
