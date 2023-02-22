@@ -9,7 +9,8 @@
   left: 0;
   right: 0;
   background-color: white;
-  padding: 1.3em;
+  padding: 1.2em;
+  padding-bottom: .8em;
   z-index: 100;
   border-bottom: 1px solid rgb(190, 190, 190);
   align-items: flex-start;
@@ -24,7 +25,7 @@
   display: flex;
   object-fit: contain;
   width: 8em;
-  margin-right: 1.3em;
+  margin-right: 1.2em;
   margin-top: 0.2em;
 }
 
@@ -40,7 +41,7 @@
 
 .search__header--optns {
   display: flex;
-  margin-top: 1.3em;
+  margin-top: .8em;
 }
 
 .header__optn--left,
