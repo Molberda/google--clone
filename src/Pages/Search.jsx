@@ -34,7 +34,7 @@ const Search = () => {
         </Link>
         <div className="search__header--body">
           <SearchBar hideButtons />
-          <div className="search__header--optn">
+          <div className="search__header--optns">
             <div className="header__optn--left">
               <div className="header__optn">
                 <SearchIcon />
