@@ -3,8 +3,14 @@ import "./Search.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../Components/SearchBar";
 import { useStateValue } from "../StateProvider";
-import useGoogleSearch from "../useGoogleSearch";
+// import useGoogleSearch from "../useGoogleSearch";
 import response from "../response";
+import  SearchIcon  from "@mui/icons-material/Search";
+import  DescriptionIcon  from "@mui/icons-material/Description";
+import  ImageIcon  from "@mui/icons-material/Image";
+import  LocalOfferIcon  from "@mui/icons-material/LocalOffer";
+import  RoomIcon  from "@mui/icons-material/Room";
+import  MoreVertIcon  from "@mui/icons-material/MoreVert";
 
 const Search = () => {
   const [{ term }, dispatch] = useStateValue();
@@ -30,7 +36,30 @@ const Search = () => {
           <SearchBar hideButtons />
           <div className="search__header--optn">
             <div className="header__optn--left">
-              <div className="header__optn"></div>
+              <div className="header__optn">
+                <SearchIcon />
+                <Link to='/all'>All</Link>
+              </div>
+              <div className="header__optn">
+                <DescriptionIcon />
+                <Link to='/news'>News</Link>
+              </div>
+              <div className="header__optn">
+                <ImageIcon />
+                <Link to='/images'>Images</Link>
+              </div>
+              <div className="header__optn">
+                <LocalOfferIcon />
+                <Link to='/shopping'>Shopping</Link>
+              </div>
+              <div className="header__optn">
+                <RoomIcon />
+                <Link to='/maps'>Maps</Link>
+              </div>
+              <div className="header__optn">
+                <MoreVertIcon />
+                <Link to='/more'>More</Link>
+              </div>
             </div>
             <div className="header__optn--right"></div>
           </div>
