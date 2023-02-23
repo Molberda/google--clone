@@ -10,7 +10,7 @@
   right: 0;
   background-color: white;
   padding: 1.2em;
-  padding-bottom: .8em;
+  padding-bottom: 0.8em;
   z-index: 100;
   border-bottom: 1px solid rgb(190, 190, 190);
   align-items: flex-start;
@@ -41,7 +41,7 @@
 
 .search__header--optns {
   display: flex;
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
 .header__optn--left,
@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   margin-right: 1em;
-  font-size: .8em;
+  font-size: 0.8em;
   color: gray;
 }
 
@@ -73,42 +73,44 @@
 
 /* RESULTS FROM THE SEARCH */
 
-.search__results--count{
+.search__results--count {
   margin: 1em 0;
   color: gray;
-  font-size: .5em;
-}
-
-.search__result--item{
-  margin: 1.2em 0;
-}
-
-.item__display--link{
   font-size: 0.5em;
 }
 
-.search__result--item > .item__title:hover{
+.search__result--item {
+  margin: 1.2em 0;
+}
+
+.item__display--link {
+  font-size: 0.5em;
+}
+
+.search__result--item > .item__title:hover {
   text-decoration: underline;
 }
 
-.search__result--item h2{
-  margin-bottom: .25em;
+.search__result--item h2 {
+  margin-bottom: 0.25em;
   font-weight: 500;
 }
 
-.item__snippet{
+.item__snippet {
   text-align: justify;
   color: rgb(80, 80, 80);
-  font-size: .6em;
+  font-size: 0.6em;
 }
 
-.item__img--wrapper{
-display: flex;
-align-items: center;
+.item__img--wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.item__img{
+.item__img {
   object-fit: contain;
   width: 2em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
+
+/* MINUTE 3:07:51 */

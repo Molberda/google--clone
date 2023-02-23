@@ -3,8 +3,8 @@ import "./Search.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../Components/SearchBar";
 import { useStateValue } from "../StateProvider";
-// import useGoogleSearch from "../useGoogleSearch";
-import response from "../response";
+import useGoogleSearch from "../useGoogleSearch";
+// import response from "../response";
 import SearchIcon from "@mui/icons-material/Search";
 import DescriptionIcon from "@mui/icons-material/Description";
 import ImageIcon from "@mui/icons-material/Image";
@@ -14,11 +14,9 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Search = () => {
   const [{ term }, dispatch] = useStateValue();
-  // const { data } = useGoogleSearch(term)
+  const { data } = useGoogleSearch(term)
 
-  const data = response;
-
-  console.log(data);
+  // const data = response;
 
   return (
     <div className="search__page">
@@ -81,7 +79,7 @@ const Search = () => {
                 {data?.searchInformation.formattedSearchTime} seconds) for "
                 {term}"
               </p>
-              {data.items.map((item) => (
+              {data?.items.map((item) => (
                 <div className="search__result--item">
                   <figure className="item__img--wrapper">
                     <a href={item.link}>
