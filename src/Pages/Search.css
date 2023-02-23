@@ -101,3 +101,14 @@
   color: rgb(80, 80, 80);
   font-size: .6em;
 }
+
+.item__img--wrapper{
+display: flex;
+align-items: center;
+}
+
+.item__img{
+  object-fit: contain;
+  width: 2em;
+  margin-right: .5em;
+}

@@ -83,9 +83,23 @@ const Search = () => {
               </p>
               {data.items.map((item) => (
                 <div className="search__result--item">
+                  <figure className="item__img--wrapper">
+                    <a href={item.link}>
+                      {item.pagemap?.cse_image?.length > 0 &&
+                        item.pagemap?.cse_image[0]?.src && (
+                          <img
+                            src={
+                              item.pagemap?.cse_image?.length > 0 &&
+                              item.pagemap?.cse_image[0]?.src
+                            }
+                            className="item__img"
+                          />
+                        )}
+                    </a>
                   <a href={item.link} className="item__display--link">
                     {item.displayLink}
                   </a>
+                  </figure>
                   <a href={item.link} className="item__title">
                     <h2>{item.title}</h2>
                   </a>
