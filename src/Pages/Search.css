@@ -71,4 +71,17 @@
   font-size: 1.5em;
 }
 
-/* MINUTE 2:49:20 */
+/* RESULTS FROM THE SEARCH */
+
+.search__results--count{
+  margin: .5em 0;
+}
+
+.search__result--item{
+  margin: 1.5em 0;
+  max-width: 40em;
+}
+
+.search__result--item > a{
+  text-decoration: underline;
+}

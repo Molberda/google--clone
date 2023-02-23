@@ -78,10 +78,19 @@ const Search = () => {
             <div className="search__results">
               <p className="search__results--count">
                 About {data?.searchInformation.formattedTotalResults} results (
-                {data?.searchInformation.formattedSearchTime} seconds) for "{term}"
+                {data?.searchInformation.formattedSearchTime} seconds) for "
+                {term}"
               </p>
-              {data.items.map(item => (
-                
+              {data.items.map((item) => (
+                <div className="search__result--item">
+                  <a href={item.link} className="item__display--link">
+                    {item.displayLink}
+                  </a>
+                  <a href={item.link} className="item__title">
+                    <h2>{item.title}</h2>
+                  </a>
+                  <p className="item__snippet">{item.snippet}</p>
+                </div>
               ))}
             </div>
           )}
