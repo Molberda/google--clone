@@ -75,13 +75,27 @@
 
 .search__results--count{
   margin: .5em 0;
+  color: gray;
 }
 
 .search__result--item{
-  margin: 1.5em 0;
+  margin: 1.2em 0;
   max-width: 40em;
+}
+
+.item__display--link{
+  font-size: 0.5em;
 }
 
 .search__result--item > a{
   text-decoration: underline;
+}
+
+.search__result--item h2{
+  margin-bottom: .25em;
+}
+
+.item__snippet{
+  text-align: justify;
+  color: rgb(80, 80, 80);
 }
