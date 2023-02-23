@@ -74,28 +74,30 @@
 /* RESULTS FROM THE SEARCH */
 
 .search__results--count{
-  margin: .5em 0;
+  margin: 1em 0;
   color: gray;
+  font-size: .5em;
 }
 
 .search__result--item{
   margin: 1.2em 0;
-  max-width: 40em;
 }
 
 .item__display--link{
   font-size: 0.5em;
 }
 
-.search__result--item > a{
+.search__result--item > .item__title:hover{
   text-decoration: underline;
 }
 
 .search__result--item h2{
   margin-bottom: .25em;
+  font-weight: 500;
 }
 
 .item__snippet{
   text-align: justify;
   color: rgb(80, 80, 80);
+  font-size: .6em;
 }
