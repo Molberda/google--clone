@@ -22,3 +22,11 @@
 img {
   width: 100%;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width:530px) {
+  .App{
+    font-size: 12px;
+  }
+}
