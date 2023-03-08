@@ -42,7 +42,7 @@ const SearchBar = ({ hideButtons = false }) => {
           <Button type="submit" onClick={search} variant="outlined">
             Google Search
           </Button>
-          <Button variant="outlined">I'm Feeling Lucky</Button>
+          <Button onClick={ () => alert('this feature isnt implemented yet')} variant="outlined">I'm Feeling Lucky</Button>
         </div>
       ) : (
         <div className="search__btns search__btns--hidden">
