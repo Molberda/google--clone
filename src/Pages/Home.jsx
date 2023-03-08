@@ -18,7 +18,7 @@ const Home = () => {
               <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
                 Store
               </Link>
-              <Link className="link" to="/search">
+              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
                 Search
               </Link>
             </div>
