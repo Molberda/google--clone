@@ -23,7 +23,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="home__headerRight">
-              <Link className="link" to="/gmail">
+              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
                 Gmail
               </Link>
               <Link className="link" to="/Images">
