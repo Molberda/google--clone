@@ -12,10 +12,10 @@ const Home = () => {
         <div className="row home__row">
           <div className="home__header">
             <div className="home__headerLeft">
-              <Link className="link" to="/about">
+              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
                 About
               </Link>
-              <Link className="link" to="/store">
+              <Link className="link" to="/">
                 Store
               </Link>
               <Link className="link" to="/search">
