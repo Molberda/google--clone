@@ -39,36 +39,36 @@ const Search = () => {
           <SearchBar hideButtons />
           <div className="search__header--optns">
             <div className="header__optn--left">
-              <Link className="header__optn" to="/all">
+              <Link onClick={notImplemented} className="header__optn" to="/all">
                 <SearchIcon />
                 All
               </Link>
-              <Link className="header__optn" to="/news">
+              <Link onClick={notImplemented} className="header__optn" to="/news">
                 <DescriptionIcon />
                 News
               </Link>
-              <Link className="header__optn" to="/images">
+              <Link onClick={notImplemented} className="header__optn" to="/images">
                 <ImageIcon />
                 Images
               </Link>
-              <Link className="header__optn" to="/shopping">
+              <Link onClick={notImplemented} className="header__optn" to="/shopping">
                 <LocalOfferIcon />
                 Shopping
               </Link>
-              <Link className="header__optn" to="/maps">
+              <Link onClick={notImplemented} className="header__optn" to="/maps">
                 <RoomIcon />
                 Maps
               </Link>
-              <Link className="header__optn" to="/more">
+              <Link onClick={notImplemented} className="header__optn" to="/more">
                 <MoreVertIcon />
                 More
               </Link>
             </div>
             <div className="header__optn--right">
-              <Link className="header__optn" to="/settings">
+              <Link onClick={notImplemented} className="header__optn" to="/settings">
                 Settings
               </Link>
-              <Link className="header__optn" to="/tools">
+              <Link onClick={notImplemented} className="header__optn" to="/tools">
                 Tools
               </Link>
             </div>
