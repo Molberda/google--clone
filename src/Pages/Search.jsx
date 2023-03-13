@@ -14,7 +14,12 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Search = () => {
   const [{ term }, dispatch] = useStateValue();
+
   const { data } = useGoogleSearch(term)
+
+  function notImplemented(){
+    return alert('this feature isnt implemented yet')
+  }
 
   // const data = response;
 

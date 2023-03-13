@@ -10,6 +10,7 @@ const Home = () => {
   function notImplemented(){
     return alert('this feature isnt implemented yet')
   }
+  
   return (
     <section id="home">
       <div className="container home__container">
