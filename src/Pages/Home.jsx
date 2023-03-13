@@ -6,27 +6,31 @@ import { Avatar } from "@mui/material";
 import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
+
+  function notImplemented(){
+    return alert('this feature isnt implemented yet')
+  }
   return (
     <section id="home">
       <div className="container home__container">
         <div className="row home__row">
           <div className="home__header">
             <div className="home__headerLeft">
-              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
+              <Link onClick={notImplemented} className="link" to="/">
                 About
               </Link>
-              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
+              <Link onClick={notImplemented} className="link" to="/">
                 Store
               </Link>
-              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
+              <Link onClick={notImplemented} className="link" to="/">
                 Search
               </Link>
             </div>
             <div className="home__headerRight">
-              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
+              <Link onClick={notImplemented} className="link" to="/">
                 Gmail
               </Link>
-              <Link onClick={ () => alert('this feature isnt implemented yet')} className="link" to="/">
+              <Link onClick={notImplemented} className="link" to="/">
                 Images
               </Link>
               <AppsIcon />
