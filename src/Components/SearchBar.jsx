@@ -13,6 +13,11 @@ const SearchBar = ({ hideButtons = false }) => {
   
   const [input, setInput] = useState("");
   const history = useNavigate();
+  
+  function notImplemented(){
+    return alert('this feature isnt implemented yet')
+  }
+
 
   function search(e) {
     e.preventDefault();
@@ -42,7 +47,7 @@ const SearchBar = ({ hideButtons = false }) => {
           <Button type="submit" onClick={search} variant="outlined">
             Google Search
           </Button>
-          <Button onClick={ () => alert('this feature isnt implemented yet')} variant="outlined">I'm Feeling Lucky</Button>
+          <Button onClick={notImplemented} variant="outlined">I'm Feeling Lucky</Button>
         </div>
       ) : (
         <div className="search__btns search__btns--hidden">

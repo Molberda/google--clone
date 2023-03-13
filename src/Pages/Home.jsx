@@ -10,7 +10,7 @@ const Home = () => {
   function notImplemented(){
     return alert('this feature isnt implemented yet')
   }
-  
+
   return (
     <section id="home">
       <div className="container home__container">
@@ -34,8 +34,8 @@ const Home = () => {
               <Link onClick={notImplemented} className="link" to="/">
                 Images
               </Link>
-              <AppsIcon />
-              <Avatar />
+              <AppsIcon onClick={notImplemented} />
+              <Avatar onClick={notImplemented} />
             </div>
           </div>
           <div className="home__body">
